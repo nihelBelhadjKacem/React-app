@@ -5,12 +5,12 @@ const NewExpense = (props) =>{
     const onSaveExpense= (entredExpenseD) =>{
        const entredData = {
         ...entredExpenseD,
-        id: Math.random().toString
+        id: Math.random().toString()
        };
        props.onAddd(entredData);
     };
 return <div className="new-expense">
-    <ExpenseForm onSaveExpense= {onSaveExpense}/> {/*should be a fonction·*/}
+    <ExpenseForm onSaveExpense= {onSaveExpense}/>
 </div>
 };
 export default NewExpense;
